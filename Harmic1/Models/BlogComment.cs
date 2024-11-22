@@ -14,7 +14,6 @@ public partial class BlogComment
     public string? Email { get; set; }
     public string? Image { get; set; }
 
-/*nhin nay*/
     public DateTime? CreateDate { get; set; }
 
     public string? Detail { get; set; }
