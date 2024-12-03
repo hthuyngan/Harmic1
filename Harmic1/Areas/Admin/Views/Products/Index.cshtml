@@ -74,7 +74,11 @@
                                             <td>@(i++)</td>
                                             <td>@Html.DisplayFor(modelItem => item.Title)</td>
                                             <td>@Html.DisplayFor(modelItem => item.CategoryProduct.Title)</td>
-                                            <td><img src="@Html.DisplayFor(modelItem => item.Image)" width="50" hight="50"/></td>
+                                            <td>
+                                                <img src="@Url.Content("~/assets/images/product/medium-size/" + item.Image)" width="50" height="50" />
+
+                                            </td>
+
                                             <td>@Html.DisplayFor(modelItem => item.Price)</td>
                                             <td>@Html.DisplayFor(modelItem => item.PriceSale)</td>
                                             <td>@Html.DisplayFor(modelItem => item.Quantity)</td>
